@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RfnamingActivity">
+
+    <LinearLayout
+        android:id="@+id/ll0"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/pronm1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:layout_weight="3"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@color/Titlecolor"
+            android:text="DWMS - "
+            android:fontFamily="sans-serif-medium"/>
+        <TextView
+            android:id="@+id/pronm2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:background="@color/Titlecolor"
+            android:text="RF Terminal Naming"
+            android:fontFamily="sans-serif-medium"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="8"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="8"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:layout_height="35dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <TextView
+                    android:text="Fixed Warehouse"
+                    android:layout_width="@dimen/txt_medium_title_width"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/txt_std_size"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textColor="#38678F"
+                    android:layout_height="match_parent"
+                    />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_spinner1"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border2"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/rfwarehouse"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent"
+                        android:layout_width="120dp"
+                        android:layout_marginRight="10dp"
+                        android:textSize="@dimen/txt_std_size"
+                        android:fontFamily="sans-serif"
+                        android:textStyle="bold"
+                        android:textColor="#38678F"
+                        android:spinnerMode="dropdown"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:layout_height="35dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <TextView
+                    android:text="Teminal Name"
+                    android:layout_width="@dimen/txt_medium_title_width"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/txt_std_size"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textColor="#38678F"
+                    android:layout_height="match_parent"
+                    />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_spinner2"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border2"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/rfspinner"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent"
+                        android:layout_width="120dp"
+                        android:layout_marginRight="10dp"
+                        android:textSize="@dimen/txt_std_size"
+                        android:fontFamily="sans-serif"
+                        android:textStyle="bold"
+                        android:textColor="#38678F"
+                        android:spinnerMode="dropdown"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:layout_height="35dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <TextView
+                    android:text="System Password"
+                    android:layout_width="@dimen/txt_medium_title_width"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/txt_std_size"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textColor="#38678F"
+                    android:layout_height="match_parent"
+                    />
+
+                <EditText
+                    android:id="@+id/txtsyspwd"
+                    android:textSize="@dimen/txt_std_size"
+                    android:layout_width="120dp"
+                    android:maxLines="1"
+                    android:maxLength="20"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="0dp"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/border"
+                    android:textStyle="bold"
+                    android:selectAllOnFocus = "true"
+                    android:textColorHighlight = "#A77DDD51"
+                    android:textColor="@color/cardview_dark_background"
+                    android:layout_height="match_parent"
+                    android:inputType="textPassword"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="9"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/activity_vertical_top"
+        android:layout_marginBottom="@dimen/activity_vertical_bottom"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id = "@+id/btnEdit"
+                android:layout_width="@dimen/btn_medium_width"
+                android:layout_height="@dimen/btn_medium_height"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_2"
+                android:text = '수정'
+                android:layout_gravity="center"
+                android:textColor="@color/design_default_color_primary_dark"
+                android:textSize="@dimen/txt_std_size"
+                android:onClick="SaveconfigOnClick" />
+
+            <Button
+                android:id = "@+id/btnClose"
+                android:layout_width="@dimen/btn_medium_width"
+                android:layout_height="@dimen/btn_medium_height"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/button_2"
+                android:text = '닫기'
+                android:layout_gravity="center"
+                android:textColor="@color/design_default_color_primary_dark"
+                android:textSize="@dimen/txt_std_size"
+                android:onClick="CloseOnClick" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity = "center_horizontal"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#38678F"
+            android:textSize="@dimen/logo_size"
+            android:text="@string/copylight"
+            android:textStyle="bold"
+            android:textScaleX="1" />
+    </LinearLayout>
+
+</LinearLayout>

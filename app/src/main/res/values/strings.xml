@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">DWMS</string>
+    <string name="title_activity_login">DWMS Log in</string>
+    <string name="id">아이디</string>
+    <string name="pwd">비밀번호</string>
+    <string name="copylight">Copyright(c) 2020- (주)비즈에스아이</string>
+    <string name="owner">KSBED</string>
+
+    <string name="selected_item">Selected item:</string>
+    <string-array name="RFLIST">
+        <item>RF001</item>
+        <item>RF002</item>
+        <item>RF003</item>
+        <item>RF004</item>
+        <item>RF005</item>
+        <item>RF006</item>
+    </string-array>
+    <string-array name="WARE">
+        <item>K01</item>
+        <item>K03</item>
+    </string-array>
+
+    <string-array name="OWNER">
+        <item>KSBED</item>
+    </string-array>
+
+    <string-array name="PRTCNT">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="REC">
+        <item>K1-REC-01</item>
+        <item>K1-REC-02</item>
+        <item>K1-REC-03</item>
+    </string-array>
+
+    <string-array name="RET">
+        <item>K1-RET-01</item>
+    </string-array>
+
+    <string-array name="DIVI">
+        <item>1F</item>
+        <item>2F</item>
+        <item>3FA</item>
+        <item>3FB</item>
+        <item>4F</item>
+    </string-array>
+
+</resources>

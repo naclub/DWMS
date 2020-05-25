@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="60dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id="@+id/txtowner_id"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="@dimen/txt_std_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtitem_id"
+            android:layout_width="@dimen/txt_itemid_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="@dimen/txt_std_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtstock_qty"
+            android:layout_width="@dimen/txt_qty_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:fontFamily="sans-serif"
+            android:gravity="right"
+            android:text="TextView"
+            android:textSize="@dimen/txt_std_size"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/txtitem_nm"
+            android:layout_width="@dimen/txt_itemnm_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:fontFamily="sans-serif"
+            android:gravity="left"
+            android:text="TextView"
+            android:textSize="@dimen/txt_std_size"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

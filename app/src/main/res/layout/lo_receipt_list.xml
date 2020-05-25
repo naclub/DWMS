@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="120dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif"
+            android:gravity="left"
+            android:text="ITEMCD"
+            android:textSize="@dimen/txt_std_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtitem_id"
+            android:layout_width="@dimen/txt_itemnm_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif"
+            android:gravity="left"
+            android:text="TextView"
+            android:textSize="@dimen/txt_std_size"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif"
+            android:gravity="left"
+            android:text="ITEM명"
+            android:textSize="@dimen/txt_std_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtitem_nm"
+            android:layout_width="@dimen/txt_itemnm_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif"
+            android:gravity="left"
+            android:text="TextView"
+            android:textSize="@dimen/txt_std_size"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif"
+            android:gravity="left"
+            android:text="입고계획량"
+            android:textSize="@dimen/txt_std_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtplan_qty"
+            android:layout_width="@dimen/txt_qty_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif"
+            android:gravity="left"
+            android:text="TextView"
+            android:textSize="@dimen/txt_std_size"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif"
+            android:gravity="left"
+            android:text="기입고량"
+            android:textSize="@dimen/txt_std_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtconfirm_qty"
+            android:layout_width="@dimen/txt_qty_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif"
+            android:gravity="left"
+            android:text="TextView"
+            android:textSize="@dimen/txt_std_size"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

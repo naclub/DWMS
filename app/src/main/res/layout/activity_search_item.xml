@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SearchItemActivity">
+
+    <LinearLayout
+        android:id="@+id/ll0"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/pronm1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:layout_weight="3"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@color/Titlecolor"
+            android:text="DWMS - "
+            android:fontFamily="sans-serif-medium"/>
+        <TextView
+            android:id="@+id/pronm2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:background="@color/Titlecolor"
+            android:text="재고 조회(ITEM)"
+            android:fontFamily="sans-serif-medium"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:layout_height="30dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="Owner"
+                    android:layout_width="@dimen/txt_small_title_width"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/txt_std_size"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textColor="#38678F"
+                    android:layout_height="match_parent"
+                    />
+                <TextView
+                    android:text="@string/owner"
+                    android:layout_width="@dimen/txt_std_width"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/txt_std_size"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textColor="#38678F"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:id="@+id/txtitem_id"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="@dimen/txt_std_size"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:layout_height="40dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="바코드"
+                    android:layout_width="@dimen/txt_small_title_width"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/txt_std_size"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textColor="#38678F"
+                    android:layout_height="match_parent"
+                    />
+                <EditText
+                    android:id="@+id/txtbarcode"
+                    android:text = 'W2001172011420005'
+                    android:textSize="@dimen/txt_std_size"
+                    android:layout_width="@dimen/txt_barcode_width"
+                    android:maxLines="1"
+                    android:maxLength="20"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:inputType="text|textCapCharacters"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/border"
+                    android:textStyle="bold"
+                    android:selectAllOnFocus = "true"
+                    android:textColorHighlight = "#A77DDD51"
+                    android:textColor="@color/cardview_dark_background"
+                    android:layout_height="30dp"
+                    android:imeOptions="actionSearch"/>
+
+                <Button
+                    android:id = "@+id/btnSearch"
+                    android:layout_width="60dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/button_2"
+                    android:text = '조회'
+                    android:layout_gravity="center"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="@dimen/txt_std_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:layout_height="30dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="단품명"
+                    android:layout_width="@dimen/txt_small_title_width"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/txt_std_size"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textColor="#38678F"
+                    android:layout_height="match_parent"
+                    />
+                <TextView
+                    android:id="@+id/txtitem_nm"
+                    android:text = ""
+                    android:layout_width="@dimen/txt_itemnm_width"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/txt_std_size"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textColor="#38678F"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/activity_vertical_top"
+        android:layout_marginBottom="@dimen/activity_vertical_bottom"
+        android:orientation="vertical">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="10"
+           android:background="@drawable/border_title"
+           android:orientation="horizontal">
+           <TextView
+               android:text="로케이션"
+               android:layout_width="150dp"
+               android:gravity="center"
+               android:layout_marginRight="5dp"
+               android:layout_marginLeft="5dp"
+               android:textSize="@dimen/txt_std_size"
+               android:fontFamily="sans-serif"
+               android:textStyle="bold"
+               android:textColor="@color/white"
+               android:layout_height="match_parent"
+               />
+           <TextView
+               android:text="Owner"
+               android:layout_width="80dp"
+               android:gravity="center"
+               android:layout_marginRight="5dp"
+               android:textSize="@dimen/txt_std_size"
+               android:fontFamily="sans-serif"
+               android:textStyle="bold"
+               android:textColor="@color/white"
+               android:layout_height="match_parent"
+               />
+           <TextView
+               android:text="수량"
+               android:layout_width="@dimen/txt_std_width"
+               android:gravity="center"
+               android:layout_marginRight="10dp"
+               android:textSize="@dimen/txt_std_size"
+               android:fontFamily="sans-serif"
+               android:textStyle="bold"
+               android:textColor="@color/white"
+               android:layout_height="match_parent"
+               />
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvSearchItem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="1dp"
+                tools:ignore="MissingConstraints" />
+       </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity = "center_horizontal"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#38678F"
+            android:textSize="@dimen/logo_size"
+            android:text="@string/copylight"
+            android:textStyle="bold"
+            android:textScaleX="1" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_blue"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll0"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/pronm1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:layout_weight="3"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@color/design_default_color_primary_dark"
+            android:text="DWMS    > "
+            android:fontFamily="sans-serif-medium"/>
+        <TextView
+            android:id="@+id/pronm2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:background="@color/design_default_color_primary_dark"
+            android:text="Main Menu"
+            android:fontFamily="sans-serif-medium"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_top"
+            android:layout_marginBottom="@dimen/activity_vertical_bottom"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnReceipt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_button_height"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_top"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_bottom"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:drawableLeft="@drawable/receipt"
+                android:drawablePadding="4dp"
+                android:text="입하"
+                android:onClick="ReceiptsOnClick" />
+
+            <Button
+                android:id="@+id/btnputaway"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_button_height"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_top"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_bottom"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:drawableLeft="@drawable/move_pallet"
+                android:drawablePadding="4dp"
+                android:onClick="PutawayOnClick"
+                android:text="입고(팔레트)" />
+
+            <Button
+                android:id="@+id/Moveitem"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_button_height"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_top"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_bottom"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:drawableLeft="@drawable/move_item"
+                android:drawablePadding="4dp"
+                android:onClick="MoveitemOnClick"
+                android:text="이동(ITEM)" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_top"
+            android:layout_marginBottom="@dimen/activity_vertical_bottom"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnPicking"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_button_height"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_top"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_bottom"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:drawableLeft="@drawable/picking"
+                android:drawablePadding="4dp"
+                android:onClick="PickingOnClick"
+                android:text="피킹" />
+
+            <Button
+                android:id="@+id/btnloading"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_button_height"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_top"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_bottom"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:drawableLeft="@drawable/loading"
+                android:drawablePadding="4dp"
+                android:onClick="LoadingOnClick"
+                android:text="상차" />
+
+            <Button
+                android:id="@+id/btnCyclecount"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_button_height"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_top"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_bottom"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:drawableLeft="@drawable/cyclecount"
+                android:drawablePadding="4dp"
+                android:onClick="CyclecountOnClick"
+                android:text="재고조사" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/activity_vertical_top"
+            android:layout_marginBottom="@dimen/activity_vertical_bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSearchitem"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_button_height"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_top"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_bottom"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:drawableLeft="@drawable/search_item"
+                android:drawablePadding="4dp"
+                android:onClick="SearchitemOnClick"
+                android:text="조회(ITEM)" />
+
+            <Button
+                android:id="@+id/btnSeacrhlocation"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_button_height"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_top"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_bottom"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:drawableLeft="@drawable/search_loc"
+                android:drawablePadding="4dp"
+                android:onClick="SearchlocationOnClick"
+                android:text="조회(LOC)" />
+
+            <Button
+                android:id="@+id/btnConfig"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_button_height"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_top"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_bottom"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:drawableLeft="@drawable/config"
+                android:drawablePadding="4dp"
+                android:onClick="ConfigOnClick"
+                android:text="RF설정" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity = "center"
+            android:layout_marginTop="@dimen/activity_vertical_top"
+            android:layout_marginBottom="@dimen/activity_vertical_bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnExit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_button_height"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_top"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_bottom"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:drawableLeft="@drawable/exit"
+                android:drawablePadding="4dp"
+                android:onClick="ExitOnClick"
+                android:text="EXIT" />
+
+            <Button
+                android:id="@+id/btnTemporary1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_button_height"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_top"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_bottom"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:onClick=""
+                android:text="임시"
+                android:visibility="invisible"
+                tools:ignore="OnClick" />
+
+            <Button
+                android:id="@+id/btnTemporary2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_button_height"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_top"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_bottom"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:onClick=""
+                android:text="임시"
+                android:visibility="invisible"
+                tools:ignore="OnClick" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/activity_vertical_top"
+        android:layout_marginBottom="@dimen/activity_vertical_bottom"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity = "center_horizontal"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#38678F"
+            android:textSize="15sp"
+            android:text="@string/copylight"
+            android:textStyle="bold"
+            android:textScaleX="1" />
+    </LinearLayout>
+
+</LinearLayout>
